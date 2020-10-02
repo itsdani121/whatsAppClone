@@ -1,66 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorDarkWhite"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="@dimen/_16sdp">
+    android:background="@color/colorDarkWhite">
 
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="@dimen/_80sdp"
-        android:layout_height="@dimen/_80sdp"
-        android:layout_marginBottom="@dimen/_8sdp"
-        android:src="@drawable/cute" />
-
-    <EditText
-        android:id="@+id/account_name"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:background="@drawable/login_background"
-        android:hint="@string/Name"
-        android:textAlignment="center"
-        android:textColor="@color/colorWhite"
-        android:textColorHint="@color/colorWhite"
-        android:textSize="@dimen/_16ssp" />
-
-    <EditText
-        android:id="@+id/account_city"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:background="@drawable/login_background"
-        android:hint="@string/City"
-        android:textAlignment="center"
-        android:textColor="@color/colorWhite"
-        android:textColorHint="@color/colorWhite"
-        android:textSize="@dimen/_16ssp" />
-
-    <EditText
-        android:id="@+id/account_address"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:background="@drawable/login_background"
-        android:hint="@string/Address"
-        android:textAlignment="center"
-        android:textColor="@color/colorWhite"
-        android:textColorHint="@color/colorWhite"
-        android:textSize="@dimen/_16ssp" />
-
-    <Button
-        android:id="@+id/account_update"
-        android:layout_width="@dimen/_100sdp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/_16sdp"
-        android:background="@drawable/login_background"
-        android:text="@string/update"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/_16ssp" />
+        android:background="@color/colorDarkWhite"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_16sdp">
 
-</LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/account_image"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:src="@drawable/cute" />
+
+        <EditText
+            android:id="@+id/account_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:autofillHints="@string/Name"
+            android:background="@drawable/login_background"
+            android:hint="@string/Name"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="@dimen/_16ssp" />
+
+        <EditText
+            android:id="@+id/account_city"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:autofillHints="@string/City"
+            android:background="@drawable/login_background"
+            android:hint="@string/City"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="@dimen/_16ssp" />
+
+        <EditText
+            android:id="@+id/account_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:autofillHints="@string/Address"
+            android:background="@drawable/login_background"
+            android:hint="@string/Address"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="@dimen/_16ssp" />
+
+        <Button
+            android:id="@+id/account_update"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/login_background"
+            android:text="@string/update"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_16ssp" />
+
+    </LinearLayout>
+
+</ScrollView>
